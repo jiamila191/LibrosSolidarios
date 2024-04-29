@@ -67,11 +67,70 @@ footer p{
 .dropdown {
     margin-right: 20px;
 }
-.size {
-    width: 300px;
-  }
-.carousel-container {
+#filtros {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+#filtros label {
+    margin-right: 10px;
+    color: #333;
+}
+
+#filtros select {
+    padding: 5px;
+    margin-right: 50px;
+}
+
+#filtros button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #65995c;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#filtros button:first-child {
+    margin-left: 20px;
+}
+
+#lista-libros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+#lista-libros img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item p {
+    margin: 5px 0;
+}
